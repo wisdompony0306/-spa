@@ -1,0 +1,242 @@
+@import '../../asset/base';
+
+@fontsize22: 11px;
+@fontsize32: 16px;
+@fontsize46: 23px;
+@fontsize24: 12px;
+@fontsize36: 18px;
+
+.mainvenueBox {
+  width: 100%;
+  min-height: 100vh;
+  background: url("//img.58cdn.com.cn/fangrs/img/b887f6c41c518ef0e358558cdbd48f6d.png") 0 0 no-repeat,
+  url("//img.58cdn.com.cn/fangrs/img/1928e509e904a90c26e93577c8a1f2bf.png") 0 px2rem(531px) no-repeat,
+  url("//img.58cdn.com.cn/fangrs/img/92f0dcb29302a50376d79d8250fcba67.png") 0 px2rem(2831px) no-repeat,
+  linear-gradient(#2d0075 60%, #0500e8);
+  background-size: 100% auto;
+  padding: 0 px2rem(30px) px2rem(100px);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding-bottom: 2rem;
+
+  /*头图*/
+  .headBox {
+    position: relative;
+    width: 100%;
+    height: px2rem(510px);
+    margin: 0 0 px2rem(28px);
+    span {
+      display: block;
+      position: absolute;
+      top: px2rem(266px);
+      left: px2rem(340px);
+      font-size: @fontsize22;
+      color: #fff;
+    }
+  }
+
+  .houseHeadBox {
+    height: px2rem(456px);
+    margin: 0;
+
+  }
+
+  /*新巢计划*/
+  .xcjhBox {
+    height: px2rem(650px);
+    text-align: center;
+    .xcjhHead {
+      margin: px2rem(20px) auto px2rem(44px);
+      background: data-uri("./images/mainvenue_xcjh_title.png") no-repeat;
+      background-size: cover;
+      width: px2rem(506px);
+      height: px2rem(44px);
+    }
+    .xcjhDesc {
+      margin: px2rem(34px) auto px2rem(40px);
+      font-size: @fontsize22;
+      line-height: px2rem(36px);
+      font-weight: 200;
+      color: #fff;
+      text-align: left;
+    }
+    .xcjhBtn {
+      display: block;
+      background: #ff3544;
+      height: px2rem(90px);
+      line-height: px2rem(90px);
+      text-align: center;
+      color: #fff;
+      font-size: @fontsize32;
+      border-radius: px2rem(3px);
+      margin: 0 0 px2rem(20px);
+    }
+  }
+
+  /*精选店铺*/
+  .jxdpBox {
+
+    .jxdpTitle {
+      text-align: center;
+      color: #fff;
+      font-size: @fontsize46;
+      padding: px2rem(25px) auto px2rem(15px);
+      border-bottom: px2rem(2px) solid #5f5dbf;
+    }
+    .jxdpDesc {
+      text-align: center;
+      color: #fff;
+      font-size: @fontsize22;
+      font-weight: 200;
+      padding-bottom: px2rem(42px);
+      padding-top: 0.1rem;
+    }
+    .jxdpList {
+      height: auto;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      -webkit-justify-content: space-between;
+      -webkit-align-items: center;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .jxdpBtn {
+      display: block;
+      margin: 0 auto 0.3rem;
+      width: px2rem(220px);
+      height: px2rem(50px);
+      border: px2rem(2px) solid #706fca;
+      border-radius: px2rem(25px);
+      line-height: px2rem(50px);
+      text-align: center;
+      color: #fff;
+      font-size: @fontsize22;
+    }
+  }
+
+  /*头条位*/
+  .toutiao {
+    position: relative;
+    width: 100%;
+    height: px2rem(120px);
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+
+    .ttTitle {
+      width: px2rem(210px);
+      height: 100%;
+      background: data-uri("./images/mainvenue_zufangtoutiao.png") center no-repeat;
+      background-size: px2rem(164px) px2rem(39px);
+      opacity: 1;
+    }
+    .ttInfo {
+      margin: 0 px2rem(22px) 0 px2rem(10px);
+      line-height: px2rem(34px);
+      font-size: @fontsize24;
+      color: #fff;
+      opacity: 1;
+      a {
+        display: block;
+        position: absolute;
+        top: 5.7vw;
+      }
+    }
+  }
+
+  /*运营位*/
+  .yunying {
+    width: 100%;
+    margin: 0 auto;
+    width: px2rem(690px);
+    height: px2rem(280px);
+    img {
+      width: px2rem(690px);
+      height: px2rem(280px);
+    }
+  }
+
+  .yunyingMGY {
+    margin: px2rem(40px) auto;
+  }
+
+  .yunyingM {
+    margin: px2rem(40px) auto;
+  }
+
+  /*引流位*/
+  .yinliu {
+    width: 100%;
+    margin: 0 auto;
+    width: px2rem(692px);
+    height: px2rem(280px);
+    img {
+      width: px2rem(692px);
+      height: px2rem(280px);
+    }
+  }
+
+  .yinliuMGY {
+    margin: px2rem(50px) auto;
+  }
+
+  .yinliuM {
+    margin: px2rem(34px) auto;
+  }
+
+  //-----------------非公寓版------------------------
+
+  /*非公寓房源标题 132*/
+  .houseTitle {
+    width: 100%;
+    height: px2rem(150px);
+    padding: px2rem(18px) 0 0;
+    line-height: px2rem(132px);
+    font-size: @fontsize36;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+}
+
+.otherBox {
+      margin-top: 0.7rem;
+}
+
+//跑马灯动画
+    .headline-loop-enter-active {
+      -webkit-transition: transform 1s;
+        transition: transform 1s
+    }
+    .headline-loop-leave-active {
+      -webkit-transition: transform 1s;
+        transition: transform 1s
+
+    }
+    .headline-loop-enter  {
+      -webkit-transform: translateY(0.9rem);
+      transform: translateY(0.9rem);
+    }
+    .headline-loop-enter-to  {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    .headline-loop-leave  {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    .headline-loop-leave-to  {
+      -webkit-transform: translateY(-1rem);
+      transform: translateY(-1rem);
+    }

@@ -1,0 +1,78 @@
+@import "../../asset/base";
+
+.apartmentBox {
+  width: 100%;
+  min-height: 100vh;
+  background: url("//img.58cdn.com.cn/fangrs/img/b887f6c41c518ef0e358558cdbd48f6d.png") 0 0 no-repeat,
+  url("//img.58cdn.com.cn/fangrs/img/1928e509e904a90c26e93577c8a1f2bf.png") 0 px2rem(531px) no-repeat,
+  url("//img.58cdn.com.cn/fangrs/img/92f0dcb29302a50376d79d8250fcba67.png") 0 px2rem(2831px) no-repeat,
+  linear-gradient(#2d0075 60%, #0500e8);
+  background-size: 100% auto;
+  padding: 0 0 px2rem(190px);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*头图*/
+  .apartmentHeadBox {
+    position: relative;
+    width: 100%;
+    height: px2rem(560px);
+    span {
+      display: block;
+      position: absolute;
+      top: px2rem(266px);
+      left: px2rem(370px);
+      font-size: px2rem(22px);
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+  /*公寓馆导航 560*/
+  .apartmentNavBox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: px2rem(84px);
+    margin: 0 auto px2rem(10px);
+    background: #1a1195;
+    text-align: center;
+
+    .navItem {
+      width: px2rem(240px);
+      color: #fff;
+      font-size: px2rem(28px);
+      line-height: px2rem(84px);
+
+      &.hover {
+        height: px2rem(92px);
+        background: #5a00ff;
+        color: #ffdd92;
+        margin-top: px2rem(84px - 92px);
+      }
+    }
+  }
+
+  .moreGongyuBtn {
+    width: 100%;
+    height: px2rem(80px);
+    line-height: px2rem(80px);
+    background: #fff;
+    opacity: 0.7;
+    font-size: px2rem(26px);
+    text-align: center;
+  }
+  .noList {
+    width: 100%;
+    height: px2rem(80px);
+    line-height: px2rem(80px);
+    font-size: px2rem(26px);
+    text-align: center;
+    color: #fff;
+  }
+}

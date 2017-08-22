@@ -1,0 +1,324 @@
+   @import '../../asset/base';
+    .last_news_png {
+        background-image: data-uri("image/lastNews.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:9vw;
+    }
+    .money20_png {
+        background-image: data-uri("image/money20.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:15vw;
+    }
+    .battery_png  {
+        background-image: data-uri("image/battery.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:15vw;
+    }
+    .ring_png  {
+        background-image: data-uri("image/ring.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:15vw;
+    }
+    .question_jpg {
+        background-image: data-uri("image/question.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .location_png {
+        background-image: data-uri("image/location.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 3vw;
+        height: 3vw;
+        display: inline-block;
+    }
+    .go_jpg {
+        background-image: data-uri("image/go.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #benefit {
+        width:100vw;
+        background: url("//img.58cdn.com.cn/fangrs/img/7ca7549f4d4a300e55c6d506119dd1a4.jpg") 0 0 no-repeat,
+            url("//img.58cdn.com.cn/fangrs/img/5a9b95a128cd296503fe2ec9cd83ef39.jpg") 0 61.2vw no-repeat,
+            url("//img.58cdn.com.cn/fangrs/img/27cc5bfc0fbb1b7df2d6cae7d08ffd7b.jpg") 0 147.2vw no-repeat;
+        background-size: 100% auto;
+        background-color: #0a00d7;
+
+        text-align: center;
+    }
+    #page {
+    }
+    .guide {
+        padding-top:97vw;
+        margin:0 4vw;
+    }
+    .applyButton {
+        background-color: #ff3544;
+        color: #fff;
+        width: 92vw;
+        margin: 6vw 4vw 0 4vw;
+        line-height: 12vw;
+        text-align: center;
+        font-size: 21px;
+    }
+    .instruction{
+        color: #fff;
+        font-size: 11px;
+        margin-top: 4vw;
+    }
+    .detailRules {
+        margin: 5vw 4vw 0 4vw;
+        p{
+            line-height: 11vw;
+            font-size: 19px;
+            background-color: #23e9eb;
+        }
+        ul{
+            opacity: .8;
+            font-size: 12px;
+            text-align: left;
+            padding: 4vw 6vw;
+            line-height: 19px;
+            background-color:  rgba(35,233,235,0.5);
+            color:#fff;
+        }
+    }
+    .lastNews {
+        margin: 5vw 4vw 0;
+        height:9vw;
+        padding-left: 2vw;
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+        p{
+            flex-grow:1;
+            color: #fff;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 9vw;
+            padding-left: 1vw;
+            display:flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            .message {
+                flex-grow:1;
+            }
+        }
+        ul {
+            -webkit-transform: translateY(9vw);
+            transform: translateY(9vw);
+            animation: scroll-up calc(4s*15) linear infinite;
+        }
+        li {
+            list-style-type: none;
+            line-height: 9vw;
+            white-space: nowrap;
+        }
+    }
+    .invitation {
+        margin: 5vw 4vw 0 4vw;
+        &_header{
+            line-height: 11vw;
+            font-size: 19px;
+            background-color: #23e9eb;
+        }
+        &_content{
+            font-size: 12px;
+            text-align: center;
+            padding-top: 3vw;
+            padding-bottom : 4.5vw;
+            background-color:  rgba(35,233,235,0.7);
+            color:#fff;
+            P{
+                color:#fff;
+                font-size: 12px;
+                span {
+                    position: absolute;
+                    right: 4vw;
+                    font-size:11px;
+                    i{
+                        display: inline-block;
+                        width: 2.5vw;
+                        height: 2.5vw;
+                    }
+                }
+            }
+            &_img {
+                display:flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                margin-top:2vw;
+                i {
+                    height:15vw;
+                }
+                
+            }
+            &_word {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap: nowrap;
+                -webkit-justify-content: space-around;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                color: #fff;
+                font-size: 15px;
+                margin-top: 2vw;
+                span {
+                     width:30.7vw;
+                }
+            }
+            &_bar {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap: nowrap;
+                -webkit-justify-content: space-around;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                margin:3vw 4vw 0 4vw;
+                li {
+                    background:#FFF;
+                    width:5vw;
+                    height:12px;
+                    display:inline-block;
+                    background-color:#92da6d;
+                }
+                li.invitated {
+                    background-color:#ffff00;
+                }
+            }
+            &_barnum {
+                margin:4px 4vw;
+                color:#fff;
+                font-size:12px;
+                text-align:left;
+                .barnum1 {
+                    padding-left:14vw;
+                }
+                .barnum2 {
+                    padding-left:17vw;
+                }
+                .barnum3 {
+                    float:right;
+                }
+            }
+            &_button {
+                line-height: 11vw;
+                background-color: #fed732;
+                width: 72vw;
+                margin: 5vw 10vw 0 10vw;
+                font-size: 14px;
+                color: #4547c0;
+                box-shadow: 3px 3px 1px #031afd;
+            }
+            p&_instruction {
+                margin-top:4vw;
+                font-size:11px;
+                color:#eee;
+            }
+        }
+    }
+    .apartments {
+        margin:5vw 4vw 0 4vw;
+        padding-bottom:20vw;
+        &_header {
+            color:#fff;
+            line-height:12vw;
+            font-size:25px;
+            span{
+                position: absolute;
+                right: 4vw;
+                font-size: 14px;
+                border: 1px solid #2837c9;
+                margin-top: 3vw;
+                line-height: 14px;
+                padding: 3px 5px;
+                border-radius: 3px;
+                white-space: nowrap;
+                min-width: 10vw;
+            }
+        }
+        &_content {
+            padding-top:2.5vw;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -webkit-justify-content: flex-start;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            text-align:left;
+            margin-right:-1.75vw;
+            &_item {
+                width:29.5vw;
+                margin-bottom:3.5vw;
+                margin-right:1.75vw;
+                &_img {
+                    height:27vw;  
+                    position: relative;
+                    background-image: data-uri("image/apartmentBj.jpg");
+                    background-size: contain;
+                    background-repeat: round;
+                    img {
+                        position:absolute;
+                        top:50%;
+                        left:50%;
+                        -webkit-transform:translate(-50%,-50%);
+                        transform:translate(-50%,-50%);
+                        width: 20vw;
+                        border-radius: 100vw;
+                    }
+                }
+                &_words{
+                    background-color:#FFF;
+                    .apartments_name{
+                        text-align: left;
+                        color: #4e3d3d;
+                        font-size: 16px;
+                        line-height: 10vw;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        span {
+                            display: inline-block;
+                            width: 1.7vw;
+                            height: 3vw;
+                            background-color: #f00;
+                            margin-right: 1vw;
+                        }
+                    }
+                    .apartments_price {
+                        color: #f00;
+                        font-size: 11px;
+                        text-align: left;
+                        padding-left: 3vw;
+                        padding-bottom: 2vw;
+                    }
+                }
+            }
+        }
+        .apartments_more{
+            font-size: 12px;
+            background-color: #68bcfe;
+            line-height: 10.5vw;
+        }
+    }
+    @keyframes scroll-up {
+    0% {
+        -webkit-transform: translateY(9vw);
+        transform: translateY(9vw);
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+  }

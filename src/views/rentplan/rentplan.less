@@ -1,0 +1,162 @@
+@import '../../asset/base';
+
+@fontsize24: 12px;
+@fontsize30: 15px;
+
+.rentplanBox {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+
+  .rpbLogo {
+    width: 100%;
+    height: px2rem(110px);
+    background: data-uri("./images/rentplan_logo.png") center no-repeat;
+    background-size: px2rem(298px) px2rem(48px);
+  }
+  .rpbHead {
+    width: 100%;
+    height: px2rem(300px);
+    background: data-uri("//img.58cdn.com.cn/fangrs/img/f66bd02930ccb1c72ab683a2fa5b049c.png") no-repeat;
+    background-size: cover;
+  }
+  .rpbDescBox {
+    width: 100%;
+    background: data-uri("//img.58cdn.com.cn/fangrs/img/1575b6cb6323432d496f793855a122d0.png") no-repeat;
+    background-size: 100% auto;
+    padding: 0 px2rem(50px) px2rem(100px);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    .rpbPlan {
+      display: block;
+      color: #3f3f3f;
+      font-size: @fontsize24;
+      margin: px2rem(40px) auto 0;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      -webkit-justify-content: space-between;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      .rpbpItem {
+        display: block;
+        width: px2rem(200px);
+        margin: 0 auto;
+        .rpbpiIcon {
+          width: px2rem(100px);
+          height: px2rem(100px);
+          margin: 0 auto;
+          &.icon1 {
+            background: data-uri("./images/rentplan_icon1.png") no-repeat;
+            background-size: cover;
+          }
+          &.icon2 {
+            background: data-uri("./images/rentplan_icon2.png") no-repeat;
+            background-size: cover;
+          }
+          &.icon3 {
+            background: data-uri("./images/rentplan_icon3.png") no-repeat;
+            background-size: cover;
+          }
+          &.icon4 {
+            background: data-uri("./images/rentplan_icon4.png") no-repeat;
+            background-size: cover;
+          }
+          &.icon5 {
+            background: data-uri("./images/rentplan_icon5.png") no-repeat;
+            background-size: cover;
+          }
+          &.icon6 {
+            background: data-uri("./images/rentplan_icon6.png") no-repeat;
+            background-size: cover;
+          }
+        }
+        .rpbpiText {
+          text-align: center;
+          height: px2rem(120px);
+          line-height: px2rem(32px);
+          padding: px2rem(26px) 0 0;
+          position: relative;
+          .wen {
+            position: absolute;
+            top: px2rem(30px);
+            right: px2rem(24px);
+            width: px2rem(22px);
+            height: px2rem(22px);
+            background: data-uri("./images/rentplan_icon_wen.png") no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .rpbDesc {
+      margin: px2rem(10px) auto 0;
+      .rpbdTop {
+        width: 100%;
+        height: px2rem(70px);
+        background: data-uri("./images/rentplan_desc_top.png") no-repeat;
+        background-size: cover;
+      }
+      .rpbdText {
+        margin: px2rem(24px) auto;
+        color: #3f3f3f;
+        font-size: @fontsize24;
+        line-height: 17px;
+      }
+      .rpbdBottom {
+        width: 100%;
+        height: px2rem(26px);
+        background: data-uri("./images/rentplan_desc_bottom.png") no-repeat;
+        background-size: cover;
+      }
+
+    }
+    .rpbBtn {
+      display: block;
+      margin: px2rem(30px) auto px2rem(66px);
+      width: px2rem(452px);
+      height: px2rem(92px);
+      line-height: px2rem(92px);
+      background: #782c21;
+      border-radius: px2rem(45px);
+      text-align: center;
+      color: #fff;
+      font-size: @fontsize30;
+    }
+  }
+  .tipsBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .tipsContext {
+      width: px2rem(540px);
+      margin: px2rem(382px) auto 0;
+      .tipsClose {
+        text-align: center;
+        margin: 0 auto;
+        width: px2rem(58px);
+        height: px2rem(106px);
+        background: data-uri("./images/rentplan_tips_close.png") no-repeat;
+        background-size: cover;
+      }
+      .tipsText {
+        width: 100%;
+        padding: px2rem(40px) px2rem(60px);
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background: #fff;
+        border-radius: px2rem(4px);
+        font-size: @fontsize24;
+        line-height: px2rem(40px);
+      }
+    }
+
+  }
+}
